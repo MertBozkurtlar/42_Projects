@@ -21,5 +21,16 @@ int main()
 	printf("input: a | output: %d\n", ft_isascii('a'));
 	printf("input: 0x80 | output: %d\n\n", ft_isascii(0x80));
 
+	printf("Test5: ft_isprint\n");
+	printf("input: a | output: %d\n", ft_isprint('a'));
+	printf("input: \\n | output: %d\n\n", ft_isprint('\n'));
+
+	printf("Test6: ft_strlen\n");
+	printf("input: Hello World! | output: %d\n", ft_strlen("Hello World!"));
+
+	printf("Test7: ft_memset\n");
+	char str[13] = "Hello World!";
+	printf("input: Hello World!, $, 7 | output: %s\n", ft_memset(str,'$',7));
+
 	return 0;
 }
