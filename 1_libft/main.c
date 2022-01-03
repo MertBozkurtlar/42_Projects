@@ -1,5 +1,6 @@
 #include "libft.h"
 #include <stdio.h>
+#include <strings.h>
 
 int main()
 {
@@ -30,7 +31,13 @@ int main()
 
 	printf("Test7: ft_memset\n");
 	char str[13] = "Hello World!";
-	printf("input: Hello World!, $, 7 | output: %s\n", ft_memset(str,'$',7));
+	printf("input: Hello World!, $, 7 | output: %s\n\n", ft_memset(str,'$',7));
 
+	printf("Test8: ft_bzero\n");
+	char str2[13] = "Hello World!";
+	ft_bzero(str2, 7);
+	printf("input: Hello World!, 7 | output: %s\n\n", str2);
+
+	
 	return 0;
 }
