@@ -10,20 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char *str)
+int	ft_isalnum(int c)
 {
-	int		i;
-
-	i = 0;
-	while (str[i] != '\0')
+	if (c >= '0' && c <= '9' || c >= 'a' && c <= 'z'
+		|| c >= 'A' && c <= 'Z')
 	{
-		if (str[i] >= '0' && str[i] <= '9' || str[i] >= 'a' && str[i] <= 'z'
-			|| str[i] >= 'A' && str[i] <= 'Z')
-		{
-			i++;
-			continue ;
-		}
-		return (0);
+		return (1);
 	}
-	return (1);
+	return (0);
 }

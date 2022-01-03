@@ -13,9 +13,9 @@
 # define LIBFT_H
 # include <stdlib.h>
 
-int	ft_isalpha(char *str);
-int	ft_isdigit(char *str);
-int	ft_isalnum(char *str);
-int	ft_isascii(char *str);
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
 
 #endif
